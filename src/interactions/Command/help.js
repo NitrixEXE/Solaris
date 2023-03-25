@@ -24,12 +24,12 @@ module.exports = {
     }
     
     let em1 = new EmbedBuilder()
-      .setAuthor({ name: `${client.user.username}\'s Help Menu`, iconURL: client.user.displayAvatarURL({ format: "png" }), url: "https://discord.gg/uoaio" })
+      .setAuthor({ name: `${client.user.username}\'s Help Menu`, iconURL: client.user.displayAvatarURL({ format: "png" }), url: "https://discord.com/api/oauth2/authorize?client_id=1003269536142856242&permissions=8&scope=bot%20applications.commands" })
       .setImage(`https://share.creavite.co/9knfNjj3wOkbFVx8.gif`)
       .setDescription(`__**Prefix Information**__\nMy Prefix is no longer supported. Please use /help!
-You can also mention <@943788447980724274> to get more information.`)
+You can also mention <@1003269536142856242> to get more information.`)
     //.setThumbnail(`https://cdn.discordapp.com/avatars/943788447980724274/2202ac2b935b8eba95cc96682f18848f.webp?size=1024`)
-      .setColor(`#cdadff`)
+      .setColor(`#3cb043`)
       .addFields([
         {
           name: "<:categories:1079993999655452702> • Categories [1-9]",
@@ -64,27 +64,27 @@ You can also mention <@943788447980724274> to get more information.`)
         },
         {
           name: "<:categories:1079993999655452702> • Categories [19-27]",
-          value: `>>> <:level:1079381913518747758> </levels help:1060212623750213716>
-<:msg:1079382002060496937> </messages help:1060212623750213718>
-<:mod:1079381977301528657>  </moderation help:1060212623750213719>
-<:songs:1079382139700777090> </music help:1077457921685848114>
-<:forum:1079381775068954624> </notepad help:1060212623750213720>
-<:usern:1079382186446307348> </profile help:1060212623750213721>
-<:song:1079382127747027084> </radio help:1060212623750213722>
-<:paint:1079382021048119346> </reactionroles help:1060212623750213723>
-<:search:1079382085296455840> </search help:1060212623792165014>`,
+          value: `>>> <a:rocket:958670949291548693> </levels help:1060212623750213716>
+<:message:946475281579933766> </messages help:1060212623750213718>
+<a:moderation:1078385393000521809> </moderation help:1060212623750213719>
+<a:music:959091822016200725> </music help:1077457921685848114>
+<a:notepad:1089184906812330024> </notepad help:1060212623750213720>
+<:profile:1089185074727100527> </profile help:1060212623750213721>
+<:radio:1089185282961719387> </radio help:1060212623750213722>
+<:reaction_roles_add:1089185452684230747> </reactionroles help:1060212623750213723>
+<a:search:945593228328054825> </search help:1060212623792165014>`,
           inline: true
         }, {
           name: "<:categories:1079993999655452702> • Categories Part [28-36]",
-          value: `>>> <:cloud:1079381684430061719> </serverstats help:1060212623792165015>
-<:utilites:1079382214996938802> </setup help:1060212623792165016>
-<:ancmt:1079381593942151308> </soundboard help:1077457921685848115>
-<:utilites:1079382214996938802> </stickymessages help:1060212623792165018>
-<:suggestion:1079382151172206632> </suggestions help:1060212623792165019>
-<:dm:1079381736649146391> </thanks help:1060212623792165020>
-<:ticket:1079382161121099956> </tickets help:1060212623792165021>
-<:maintaince:1079381951267491900> </tools help:1060212623792165022>
-<:voice:1079382229718925312> </tools help:1060212623792165022>`,
+          value: `>>> <:server:1002564389821481061> </serverstats help:1060212623792165015>
+<:setup:1089178942688211026> </setup help:1060212623792165016>
+<:soundboard_:1089185885066625094> </soundboard help:1077457921685848115>
+<:msgs:1089186088691716207> </stickymessages help:1060212623792165018>
+<:suggestion:1077948416778313738> </suggestions help:1060212623792165019>
+<:thanks:1089186321177792593> </thanks help:1060212623792165020>
+<:tickets:1077948421769531472> </tickets help:1060212623792165021>
+<a:a_setting:953157853026340914> </tools help:1060212623792165022>
+<:uo_voice_channel:1015566886303440906> </tools help:1060212623792165022>`,
           inline: true
         },
         {
@@ -95,10 +95,10 @@ You can also mention <@943788447980724274> to get more information.`)
       ])
 
 
-    let startButton = new ButtonBuilder().setStyle(2).setEmoji(`<:rr:1079706172984147998>`).setCustomId('start'),
-      backButton = new ButtonBuilder().setStyle(2).setEmoji(`<:r_:1079704515701374997>`).setCustomId('back'),
-      forwardButton = new ButtonBuilder().setStyle(2).setEmoji(`<:l_:1079704496948650105>`).setCustomId('forward'),
-      endButton = new ButtonBuilder().setStyle(2).setEmoji(`<:ll:1079706160967458866>`).setCustomId('end'),
+    let startButton = new ButtonBuilder().setStyle(2).setEmoji(`<a:rightarrow:1089189174395015228>`).setCustomId('start'),
+      backButton = new ButtonBuilder().setStyle(2).setEmoji(`<:leftarrow:1089188196694364211>`).setCustomId('back'),
+      forwardButton = new ButtonBuilder().setStyle(2).setEmoji(`<:Arrow_Right:1077887718991872020>`).setCustomId('forward'),
+      endButton = new ButtonBuilder().setStyle(2).setEmoji(`<a:leftarrow15:1089189157009637436>`).setCustomId('end'),
       link = new ButtonBuilder().setStyle(5).setLabel("S" + "u" + "b" + "sc" + "ri" + "b" + "e" + "!").setEmoji(`🥹`).setURL('https://www.youtube.com/c/NitrixEXE')
 
     const options = [{ label: 'Overview', value: '0' }]
